@@ -1,0 +1,13 @@
+services:
+  localstack:
+    container_name: "aws-apigateway-localstack-exam"
+    image: localstack/localstack:${LOCALSTACK_VERSION:-3.8.0}
+    environment:
+      - DEBUG=${DEBUG:-1}
+      - LOCALSTACK_AUTH_TOKEN=${LOCALSTACK_AUTH_TOKEN}
+    ports:
+      - "127.0.0.1:4566:4566"
+      - "127.0.0.1:4510-4559:4510-4559"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - "${LOCALSTACK_VOLUME_DIR:-./volume}:/var/lib/localstack"
