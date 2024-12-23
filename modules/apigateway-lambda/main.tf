@@ -103,6 +103,7 @@ resource "aws_lambda_function" "this" {
   environment {
     variables = {
       AWS_REGION = "${data.aws_region.current.name}"
+      SECRET_ID = var.secret_token_name
       LOCALSTACK_HOSTNAME = var.localstack_hostname
     }
   }

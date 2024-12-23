@@ -15,5 +15,9 @@ module "apigateway_lambda" {
   source = "../modules/apigateway-lambda"
   
   visiter_role_arn = module.iam.visiter_role_arn
-  secret_token_name = "secret_token" // ! temp hardcode, TODO: change with real variable
+  secret_token_name = module.secret_manager.secret_token_name
+}
+
+module "secret_manager" {
+  source = "../modules/secret-manager"
 }
