@@ -53,10 +53,10 @@ curl -s -X POST -H 'Content-Type: application/json' -d '{"action":"get"}' http:/
 
 # Other
 1. Check aws service on localstack (if you have localstack account and input the Localstack Auth Token on .env )
- ![locastack img](./docs/localstack-screenshot.png)
+ ![locastack img](/docs/localstack-screenshot.png)
 
 2. Roadmap of this Aws Service
-![aws flow img](./docs/aws-flow.jpg)
+![aws flow img](/docs/aws-flow.jpg)
 
 # Todo List
 - [X] Add localstack picture

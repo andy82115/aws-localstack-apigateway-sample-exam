@@ -51,10 +51,10 @@ curl -s -X POST -H 'Content-Type: application/json' -d '{"action":"get"}' http:/
 
 # そのほか
 1. localstack上のawsサービスをチェックする（localstackアカウントを持っていて、.envにLocalstack Auth Tokenを入力している場合）。
- ![locastack img](./docs/localstack-screenshot.png)
+ ![locastack img](/docs/localstack-screenshot.png)
 
 2. Awsサービスのロードマップ
-![aws flow img](./docs/aws-flow.jpg)
+![aws flow img](/docs/aws-flow.jpg)
 
 # Todo List
 - [X] Add localstack picture
