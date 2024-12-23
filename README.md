@@ -54,7 +54,7 @@ curl -s -X POST -H 'Content-Type: application/json' -d '{"action":"get"}' http:/
  ![locastack img](./docs/localstack-screenshot.png)
 
 2. Roadmap of this Aws Service
-![aws flow img](./docs/aws-flow.png)
+![aws flow img](./docs/aws-flow.jpg)
 
 # Todo List
 - [X] Add localstack picture
