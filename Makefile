@@ -46,6 +46,12 @@ tf-deploy:
 	$(MAKE) tf-plan
 	$(MAKE) tf-apply
 
+test-secret-get:
+	./secret-get.sh
+
+test-secret-update:
+	./secret-update.sh	
+
 run:
 	$(MAKE) docker-start
 	$(MAKE) tf-init 
