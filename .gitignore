@@ -6,7 +6,10 @@
 *.csv
 *.DS_Store
 *.env
-*key.md
+*keys.md
+
+#Docker
+volume/
 
 # Crash log files
 crash.log
